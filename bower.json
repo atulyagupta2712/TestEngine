@@ -1,0 +1,23 @@
+{
+  "name": "OnlineTest",
+  "authors": [
+    "Atulya <atulyagupta2712@gmail.com>"
+  ],
+  "description": "It is an online examination built in Angular JS.",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "angular": "^1.7.5",
+    "angular-route": "^1.7.5",
+    "angularfire": "^2.3.0"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link href="https://fonts.googleapis.com/css?family=Kreon|Vollkorn|Yrsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+    <script src="scripts/utils/firebase.js"></script>
+    <script src="scripts/app2.js"></script>
+    <script src="scripts/services/roleservice.js"></script>
+   
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/groupservice.js"></script>
+    <script src="scripts/utils/constants.js"></script>
+    <script src="scripts/controllers/maincontroller.js"></script>
+    <script src="scripts/controllers/usercontroller.js"></script>
+    <script src="scripts/controllers/quescontroller.js"></script>
+    <script src="scripts/controllers/groupcontroller.js"></script>
+    <script src="scripts/controllers/studentcontroller.js"></script>
+    <script src="scripts/routing.js"></script>
+</head>
+<body ng-app="testEngine"  ng-controller="mainctrl" class="bg">
+        <div ng-include=" 'views/ui/nav.html' ">
+
+        </div>
+    <div class="container-fluid">
+       
+        <div ng-if="isLoggedIn">
+            <h1>{{message}}</h1>
+            <button class="btn btn-danger logout" ng-click="logout()">Logout</button>
+        </div>
+        <ng-view></ng-view>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

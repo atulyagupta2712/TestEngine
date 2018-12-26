@@ -1,0 +1,41 @@
+<div ng-controller="quesctrl" class="group group1">
+    <h3 class="alert-info">
+        {{message}}
+    </h3>
+    <div class="form-group">
+        <label for="">Test Name</label>
+        <input type="text" class="form-control" placeholder="test name" ng-model="question.testname">
+    </div>
+    
+    <div class="form-group">
+        <label for="">Question</label>
+        <textarea ng-model="question.name" placeholder="question name" class="form-control" id="" cols="100" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="">Option 1</label>
+        <input type="text" class="form-control" placeholder="option 1" ng-model="question.optiona">
+    </div>
+    <div class="form-group">
+        <label for="">Option 2</label>
+        <input type="text" class="form-control" placeholder="option 2" ng-model="question.optionb">
+    </div>
+    <div class="form-group">
+        <label for="">Option 3</label>
+        <input type="text" class="form-control" placeholder="option 3" ng-model="question.optionc">
+    </div>
+    <div class="form-group">
+        <label for="">Option 4</label>
+        <input type="text" class="form-control" placeholder="option 4" ng-model="question.optiond">
+    </div>
+    <div class="form-group">
+        <label for="">Right Answer</label>
+        <input type="number" class="form-control" placeholder="Enter the correct option 1,2,3 or 4" ng-model="question.rightans">
+    </div>
+    <div class="form-group">
+        <label for="">Score</label>
+        <input type="number" class="form-control" placeholder="Score" ng-model="question.score">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" ng-click="add()" >Add Question</button>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div ng-controller="studentctrl" class="group change">
+        <div ng-show="subjects">
+            <h3 class="heading heading1">Choose the test</h3>
+            <select class="assign assign1" ng-model="studenttest">
+                <option value="">Choose your subject</option>
+                <option ng-repeat="subject in distinctsubject">{{subject}}</option>
+            </select>
+            <button class="btn btn-success submitbutton" ng-click="submit()">Submit</button>
+            <br>
+        </div>
+           
+          
+            <div ng-show="question">
+                   <h3 class="question"> {{question.name}}</h3>
+                    <br>
+                <input  class="radio" type="radio" ng-model="options" value="1" name="option"><h4 class="option"> {{question.optiona}}</h4> 
+                <br>
+                <input class="radio" type="radio" ng-model="options" value="2" name="option"><h4 class="option"> {{question.optionb}}</h4> 
+                <br>
+                <input  class="radio"type="radio" ng-model="options" value="3" name="option"><h4 class="option"> {{question.optionc}}</h4> 
+                <br>
+                <input  class="radio"type="radio" ng-model="options" value="4" name="option"><h4 class="option"> {{question.optiond}}</h4> 
+             
+                <br>
+                <button class="btn btn-primary test" ng-click="nextQuestion()">Next</button>
+                <button class="btn btn-danger test" ng-click="finish()">Finish</button>
+                </div>
+                <div ng-show="result">
+                    <h3 class="text-center headchange">Your score is {{correctscore}} out of {{totalscore}}</h3>
+                    <h3 class="text-center headchange">Your percentage is {{percentage}}</h3>
+                   
+                    <button class="btn btn-primary test1" ng-click="rightanswers()">Right answers</button>
+                    <button class="btn btn-success test1" ng-click="newTest()">Take new Test</button>
+                    
+                   
+                </div>
+                <div ng-show="answershow">
+                        <h4 class="headchange">Right Answers :</h4>
+                    <ol>
+                        <li ng-repeat="answer in answers">{{answer}}</li>
+                    </ol>
+                    <button class="btn btn-success" ng-click="newTest()">Take new Test</button>
+                </div>
+           
+        </div>

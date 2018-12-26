@@ -1,0 +1,14 @@
+<div ng-controller="usergroupctrl" class="group minsize">
+    
+    <h3 class="heading">Select Test</h3>
+    <select class="assign" ng-model="test">
+        <option value="">Choose the Test</option>
+        <option ng-repeat="test in distinctTest">{{test}}</option>
+    </select> 
+    <h3 class="heading">Select Group</h3>
+    <select class="assign" ng-model="group">
+        <option value="">Choose the group</option>
+        <option ng-repeat="group in distinctGroup">{{group}}</option>
+    </select>
+    <button class="btn btn-info assigntest" ng-click="add()">Assign Test</button>
+</div>
