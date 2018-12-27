@@ -19,9 +19,9 @@ app.controller("mainctrl",($scope,$location, $filter)=>{
 
     });
     $scope.logout =()=>{
+        alert("You are logged out!");
         $scope.isLoggedIn = false;
         $scope.menus = [];
-        $scope.message = "Logout successfully";
         localStorage.clear();
         $location.path("/");
     }
