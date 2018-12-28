@@ -7,15 +7,20 @@ app.controller("usergroupctrl",($scope, $firebaseArray, groupservice)=>{
                 group: $scope.group,
                 test: $scope.test
             }).then(ref=>{
-                $scope.message = "Test Assigned Successfully";
+                $scope.msg = "Test Assigned Successfully";
             }, error=>{
-                $scope.message=" Test not assigned due to error ";
+                $scope.msg=" Test not assigned due to error ";
             }
             )
         }
         else{
             alert("Pleae fill in all the details");
         }
+           window.setTimeout(function(){
+            $scope.$apply(function(){
+                $scope.msg = "";
+            })
+        }, 3500)
        
     }
     $scope.distinctTest = [];
