@@ -416,6 +416,10 @@ ol li{
         font-size: 19px !important;
         color: black;
     }
+        .h{
+        width: 40% !important;
+    }
+  
 }
 
 @media(max-width: 400px){
