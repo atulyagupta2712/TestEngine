@@ -227,6 +227,9 @@ ol li{
         text-align: center !important;
         margin-left: 40% !important;
     }
+      .groupcolour1{
+        font-size: 25px !important;
+    }
 }
 @media(max-width: 786px){
     .group{
@@ -332,6 +335,9 @@ ol li{
         /* text-align: center; */
         font-size: 25px !important;
         color: lightgoldenrodyellow !important;
+    }
+      .groupcolour1{
+        font-size: 22px !important;
     }
     table{
          margin-left: -5% !important;
