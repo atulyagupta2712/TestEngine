@@ -334,7 +334,8 @@ ol li{
         color: lightgoldenrodyellow !important;
     }
     table{
-        width: 100% !important;
+         margin-left: -5% !important;
+        width: 110% !important;
       background-color: lightgoldenrodyellow !important;
     }
     th,td{
