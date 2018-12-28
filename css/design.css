@@ -328,6 +328,11 @@ ol li{
     .groupname{
         width: 100% !important;
     }
+        .groupcolour{
+        /* text-align: center; */
+        font-size: 25px !important;
+        color: lightgoldenrodyellow !important;
+    }
     table{
         width: 100% !important;
       background-color: lightgoldenrodyellow !important;
