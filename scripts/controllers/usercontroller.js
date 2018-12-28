@@ -126,7 +126,7 @@ app.controller("userctrl", ($scope, $firebaseArray, $firebaseObject, roleservice
                       groupname: $scope.groupname,
                       username: student.username
                   }).then(ref=>{
-                      alert("Group Added");
+                       $scope.msg = "Group Added";
                       
                   }, error=>{
                       alert("Cannot add group due to some error");
@@ -137,6 +137,11 @@ app.controller("userctrl", ($scope, $firebaseArray, $firebaseObject, roleservice
         else{
             alert("Please fill in all the fields");
         }
+                window.setTimeout(function(){
+            $scope.$apply(function(){
+                $scope.msg = "";
+            })
+        }, 3500)
       
     }
 })
